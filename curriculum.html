@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victor Aguilar - Página Personal</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function toggleMenu(id) {
+            var menu = document.getElementById(id);
+            menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+        }
+    </script>
+</head>
+<body background="html-color-codes-color-tutorials-hero.jpg", fontcolor="white" >
+    <header>
+        <h1>Victor Manuel Aguilar López</h1>
+        <p>Administrador de Sistemas Informáticos</p>
+        <img src="yo.jpeg" alt="Foto de Victor Aguilar" class="perfil">
+        
+        <nav>
+            <ul>
+                <li><a href="#" onclick="toggleMenu('menu-sobre-mi')">Sobre Mí</a>
+                    <div id="menu-sobre-mi" class="submenu" style="display: none;">
+                        <p>Dirección: 38 calle 31-90 Amparo 2, Zona 7, Ciudad de Guatemala</p>
+                        <p>Teléfono: +502 36056293</p>
+                        <p>Estudiante de Administración de Sistemas Informáticos en la Universidad Regional de Guatemala.</p>
+                     </div>
+                </li>
+                <li><a href="#" onclick="toggleMenu('menu-experiencia')">Experiencia</a>
+                    <div id="menu-experiencia" class="submenu" style="display: none;">
+                        <ul>
+                            <li>Contraloría General de Cuentas - Especializado I (2022 - Actualidad)</li>
+                            <li>Impacto Visual - Diseño publicitario (Feb 2021 - Sep 2021)</li>
+                            <li>Can Am - Conserje (Jun 2018 - Mar 2019)</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#" onclick="toggleMenu('menu-habilidades')">Habilidades</a>
+                    <div id="menu-habilidades" class="submenu" style="display: none;">
+                        <ul>
+                            <li>Administración de Sistemas Informáticos</li>
+                            <li>Diseño Publicitario</li>
+                            <li>Manejo de Software de Impresión</li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#" onclick="toggleMenu('menu-contacto')">Contacto</a>
+                    <div id="menu-contacto" class="submenu" style="display: none;">
+                        <form id="formulario">
+                            <input type="text" id="nombre" placeholder="Tu Nombre" required>
+                            <input type="email" id="correo" placeholder="Tu Correo" required>
+                            <textarea id="mensaje" placeholder="Tu Mensaje" required></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <footer>
+        <p>© 2025 Victor Manuel Aguilar López - Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
